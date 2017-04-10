@@ -10,25 +10,23 @@
         <link rel='stylesheet' href='/css/style.css'>
     </head>
     <body>
-        <main>
-            <header ng-controller='HeaderController as header'>
-                <h1>GitHub Repos</h1>
-                <form ng-submit='header.saveToken()'>
-                    <input type='text' placeholder='GitHub token' ng-model='header.token' class='form-control'>
-                    <input type='submit' value='Save' class='btn btn-info'>
-                </form>
-            </header>
-
-            <section class='page-content' ui-view></section>
-        </main>
-
+      <header ng-controller='HeaderController as header'>
+        <h1>GitHub Repos</h1>
+        <form ng-submit='header.saveToken()'>
+          <input type='text' placeholder='GitHub token' ng-model='header.token' class='form-control'>
+          <input type='submit' value='Save' class='btn btn-info'>
+        </form>
+      </header>
+      <main>
+        <section class='page-content' ui-view></section>
+      </main>
         <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js'></script>
-        <script src='http://angular-ui.github.io/ui-router/release/angular-ui-router.js'></script>
-
+        <script src='http://unpkg.com/angular-ui-router/release/angular-ui-router.min.js'></script>
         <script src='/app/gh.module.js'></script>
         <script src='/repos/user-repos.controller.js'></script>
         <script src='/repos/github.service.js'></script>
         <script src='/app/header.controller.js'></script>
+        <script src='/app/git-repos.directive.js'></script>
 
     </body>
 </html>
