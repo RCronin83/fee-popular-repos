@@ -3,7 +3,9 @@
       {{repo.name}}
     </header>
     <section class='panel-body'>
-      <p>GitHub URL <a>{{repo.git_url}}</a></p>
-
+      <p>Stargazers: {{repo.stargazers_count}}</p>
+      <p> Git URL : {{repo.git_url}}</p>
+      <p> File Size: {{repo.size | sizeFilter}}</p>
+      <p> Popularity {{repo.popularity}}</p>
     </section>
 </main>
