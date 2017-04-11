@@ -5,4 +5,4 @@
   <input type='submit' value='Get Repos' class='btn btn-primary'>
 </form>
 
-<git-repo ng-repeat='ghRepo in reposCtrl.list' repo='ghRepo'></git-repo>
+<git-repo ng-repeat='ghRepo in reposCtrl.list | popularityOrdering' repo='ghRepo'></git-repo>
