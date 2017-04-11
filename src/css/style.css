@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 [type='text'] {
     width: 20em;
     display: inline-block;
