@@ -36,6 +36,10 @@
                 }
             }).then(function handleResponse(response) {
                 console.log('Response from GitHub:', response);
+
+                response.data.forEach(function makePopularityProperty(repo){
+                  repo.popularity = repo.stargazers_count + (2*repo.forks_count) + (0.5*repo.open_issues_count);
+                });
                 return response.data;
             });
         }
