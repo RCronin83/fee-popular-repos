@@ -14,7 +14,6 @@
       templateUrl: 'repos/single-repo.template.html',
       restrict: 'E',
       link: setupCollapse,
-      transclude: true,
       scope:{
         repo: '='
 
