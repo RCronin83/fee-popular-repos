@@ -1,0 +1,11 @@
+<main class='gh-repos panel panel-default'>
+  <header class='panel-heading'>
+    {{repo.name}}
+  </header>
+  <section class='panel-body'>
+    <p>Stargazers: {{repo.stargazers_count}}</p>
+    <p> Git URL : {{repo.git_url}}</p>
+    <p> File Size: {{repo.size | sizeFilter}}</p>
+    <p> Popularity {{repo.popularity}}</p>
+  </section>
+</main>
